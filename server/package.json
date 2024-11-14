@@ -15,10 +15,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
-  "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
-  },
+ "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js",
+  "build": "echo 'No build step needed'"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
