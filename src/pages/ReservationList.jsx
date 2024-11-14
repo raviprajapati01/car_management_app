@@ -7,7 +7,7 @@ import { setReservationList } from "../redux/state";
 import ListingCard from "../components/ListingCard";
 import Footer from "../components/Footer"
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3001"
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-172y.onrender.com"
 
 
 const ReservationList = () => {
