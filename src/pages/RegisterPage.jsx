@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"
 import "../styles/Register.scss";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3001"
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-2cwb.onrender.com"
 
 
 const RegisterPage = () => {
