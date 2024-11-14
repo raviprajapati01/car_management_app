@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Footer from "../components/Footer"
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3001"
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-2cwb.onrender.com"
 
 
 const CreateListing = () => {
