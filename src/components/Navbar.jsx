@@ -7,7 +7,7 @@ import "../styles/Navbar.scss";
 import { Link } from "react-router-dom";
 import { setLogout } from "../redux/state";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-2cwb.onrender.com"
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-172y.onrender.com"
 
 
 const Navbar = () => {
