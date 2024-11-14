@@ -4,7 +4,7 @@ import { setLogin } from "../redux/state";
 import { useDispatch } from "react-redux"
 import { useNavigate } from "react-router-dom"
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-2cwb.onrender.com"
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-172y.onrender.com"
 
 
 const LoginPage = () => {
