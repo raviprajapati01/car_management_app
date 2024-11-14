@@ -7,7 +7,7 @@ import { setListings } from "../redux/state";
 import Loader from "../components/Loader";
 import ListingCard from "../components/ListingCard";
 import Footer from "../components/Footer"
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:3001"
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://car-management-app-2cwb.onrender.com"
 
 
 const CategoryPage = () => {
