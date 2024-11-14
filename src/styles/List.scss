@@ -1,0 +1,73 @@
+@import "./breakpoints.scss";
+@import "./variables.scss";
+
+
+.navbar_search {
+  width: 100%; // Default to 100% for all screen sizes
+  max-width: 600px; // Maximum width for larger screens
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid $grey;
+  border-radius: 30px;
+  background-color: white;
+  margin: 20px auto 0; // Center the search bar and add margin-top for spacing
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+
+  button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  // Apply different styling for mobile screens
+  @include respond-to("sm") {
+    width: 100%; // Full width for mobile devices
+    padding: 5px;
+    margin: 20px auto 0; // Ensure spacing above the search bar
+    position: relative; // Change to relative to keep it below the heading
+    z-index: 9999; // Ensure it is on top of other elements
+  }
+
+  // Optional: Adjust styling for tablet or medium screens
+  @include respond-to("md") {
+    max-width: 80%; // Slightly reduce max width on medium screens
+    padding: 8px; // Adjust padding for medium screens
+  }
+
+  // Optional: Adjust styling for larger screens
+  @include respond-to("lg") {
+    max-width: 600px; // Keep max width for larger screens
+    padding: 10px; // Reset padding for larger screens
+  }
+}
+
+.title-list {
+  margin: 40px 100px;
+  color: $blue;
+
+  @include sm {
+    margin: 40px 50px;
+  }
+}
+
+.list {
+  padding: 0 100px 120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  @include xl {
+    padding: 0 20px 120px;
+  }
+}
