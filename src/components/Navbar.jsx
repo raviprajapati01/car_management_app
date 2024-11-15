@@ -67,7 +67,7 @@ const Navbar = () => {
         {dropdownMenu && user && (
           <div className="navbar_right_accountmenu">
   
-            <Link to={`/${user._id}/properties`}>Property List</Link>
+            <Link to={`/${user._id}/properties`}>Product List</Link>
             <Link to="/create-listing">Become A Host</Link>
 
             <Link
