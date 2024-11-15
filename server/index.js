@@ -31,7 +31,7 @@ dbconnection();
 
 // get request
 app.get('/', (req, res)=>[
-  res.send('Hello This is a real state application')
+  res.send('Hello This is a Car Management application')
 ])
 
 app.listen(PORT , ()=>{
