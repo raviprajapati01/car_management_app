@@ -4,9 +4,23 @@ const dotenv = require('dotenv').config();
 exports.dbconnection = () => {
     const PORT = process.env.PORT || 3001;
     const MONGO_URL = process.env.MONGO_URL;
-    mongoose.connect("mongodb+srv://raviprajapatikandari:NCTcGgh0IjUGHsiO@cluster0.s0qkx.mongodb.net/Car_Management?retryWrites=true&w=majority&appName=Cluster0" || MONGO_URL)
+
+    // Ensure MONGO_URL is defined
+    if (!MONGO_URL) {
+        console.error("MONGO_URL is not defined in the environment variables.");
+        process.exit(1); // Exit the process if the URL is not provided
+    }
+
+    mongoose.connect(MONGO_URL, {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
         .then(() => {
-        console.log(`Server Start successfully port no : ${PORT}`);
+            console.log(`Database connected successfully.`);
+            console.log(`Server can start on port: ${PORT}`);
         })
-        .catch((err) => console.log(`${err} did not connect`));
-}
+        .catch((err) => {
+            console.error(`Database connection failed: ${err.message}`);
+            process.exit(1); // Exit the process if the database connection fails
+        });
+};
